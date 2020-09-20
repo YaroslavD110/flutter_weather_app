@@ -18,7 +18,7 @@ class WeatherAPI {
       if (response.statusCode == 200) {
         return CurrentWeather.fromJSON(json.decode(response.body));
       } else {
-        throw Exception('Failed to load data!');
+        throw Exception('Failed to load data! | ' + response.body);
       }
     } catch (error) {
       print(error);

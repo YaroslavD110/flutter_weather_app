@@ -5,17 +5,20 @@ import 'package:weather_flutter_app/constants.dart';
 class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   final AppBar appBar = AppBar();
 
+  final String title;
   final Function onMenuPress;
   final Function onSearchPress;
 
-  HomeAppbar({Key key, this.onMenuPress, this.onSearchPress}) : super(key: key);
+  HomeAppbar(
+      {Key key, @required this.title, this.onMenuPress, this.onSearchPress})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
       title: Text(
-        'Lviv',
+        this.title,
         style: TextStyle(
             color: cText,
             fontSize: 19,

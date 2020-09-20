@@ -3,7 +3,7 @@ import 'package:weather_flutter_app/constants.dart';
 
 class WeatherInfo extends StatelessWidget {
   final double temperature;
-  final double humidity;
+  final int humidity;
   final String description;
 
   const WeatherInfo(

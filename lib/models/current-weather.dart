@@ -1,0 +1,3 @@
+class CurrentWeather {
+  String id;
+}

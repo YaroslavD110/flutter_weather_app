@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_config/flutter_config.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:weather_flutter_app/screens/home/main.dart';
 import 'package:weather_flutter_app/services/main.dart';
 
 void main() async {
-  // await FlutterConfig.loadEnvVariables();
+  await DotEnv().load('.env');
 
   registerServices();
   runApp(App());

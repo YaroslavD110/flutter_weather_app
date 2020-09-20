@@ -1,7 +1,7 @@
-import 'package:flutter_config/flutter_config.dart';
+// import 'package:flutter_config/flutter_config.dart';
 
 class APIConfig {
-  final String API_KEY = FlutterConfig.get('OPENWEATHER_API_KEY');
+  final String API_KEY = 'some'; // FlutterConfig.get('OPENWEATHER_API_KEY');
   final String API_DOMAIN = 'openweathermap.org';
   final String API_POSTFIX = 'data/2.5';
 
